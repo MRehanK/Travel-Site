@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisitCaribe - Best Place to be when you have a project to work on</title>
+    <link href='./caribe.css' rel='stylesheet'>
+</head>
+<body>
+    <li class="header">🌐Travel Site</li>
+    <nav>
+        <ul><div class=topnav>            <a href="index.html">Home</a></li>
+            <li><a href="Italy.html">Italy</a></li>
+            <li><a href="new_zealand.html">New Zealand</a></li>
+            <li><a href="japan.html">Japan</a></li></div></div> </div>
+
+           
+        </ul>
+    </nav>
+    <ul>
+
+      </ul>
+
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+
+          <img src="Cimg1.jpg" style="width:100%">
+          <div class="text">Beautiful Flora</div>
+        </div>
+      
+        <div class="mySlides fade">
+
+          <img src="Cimg2.jpg" style="width:100%">
+          <div class="text">Clear Water</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="Cimg3.jpg" style="width:100%">
+          <div class="text">Beachside Paradise</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <script>let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }</script> 
+      <br>
+    <div class = uppertext> Why the Carribean? </div>
+    <div class = body> The Caribbean are a stunning collection of islands known for their white-sand beaches, crystal-clear waters, and vibrant cultures. Each island offers its own unique charm and attractions: </div>
+        <div class = list> Puerto Rico: As a US citizen, you are able to freely access this territory and visit the beautiful sights and tourists attractions such as the historial Ceiba tree or vibrant architecture of Viejo San Juan  </div>
+        
+        <div class = list> The Dominian Republic is home to some of the most popular genres of music, Merengue and Bachata. Take a visit to the heart of home of a generation defining genre.   </div>
+        <img class =list src=640px-Dominican_Republic_Dance.jpg alt="Dominicans at a parade in traditional garb dancing">
+
+
+<div class = bottomtext>Copyright 1994 C. Travel Site <br> Site not responsible for information. Do not contact. </div>
+</body>
+</html>
+

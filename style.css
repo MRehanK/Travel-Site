@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box; /* Ensure padding and border are included in the width/height */
+}
+/* TODO: 
+    * Make the Page dynamically responsive 
+    *  Find out how to use @media
+    * Use Previous code JS to make the page change color
+    * Stop using px as a sizer
+
+
+ */
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #edf7fa;
+    transition: background-color 0.3s ease; 
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 1.5% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 2em;
+    color: wheat;
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: #f4f4f4;
+    padding: 0 2%;
+}
+
+.menu-content h2 {
+    margin: 10px 0;
+}
+
+.menu-content p {
+    margin: 0 0 20px 0;
+}
+
+.Large-Picture {
+    position: relative;
+    width: 100%; 
+    height: 50vh; /* Responsive height */
+    background-image: url('https://images.unsplash.com/photo-1528255915607-9012fda0f838?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.Large-Picture p {
+    position: absolute; 
+    bottom: 2%; 
+    left: 2%; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 20px;
+    padding: 1%;
+    font-size: 4em; /* Responsive font size */
+}
+
+.places-container {
+    width: 100%; 
+    text-align: center; 
+}
+
+.places-container h2 {
+    font-size: 5em; /* Responsive font size */
+    margin-bottom: 10px; 
+}
+
+.places-container p {
+    margin-bottom: 20px; 
+}
+
+.image-placeholder {
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    width: 100%;  
+    height: auto;
+}
+
+.image-placeholder iframe {
+    width: 100%;  
+    height: 40vh;  
+}
+
+.Country-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 90%; 
+    margin: 20px auto; 
+    padding: 5% 2%;
+}
+
+.image-container {
+    flex: 0 0 50%; 
+    max-width: 100%; 
+    height: auto; 
+    padding: 2%;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 20px;
+}
+
+
+/* Responsive Elements */
+
+.text-container {
+    flex: 1; 
+    margin-top: 2%; 
+}
+
+.text-container h2 {
+    font-size: 3em; 
+}
+
+.text-container p {
+    font-size: 1.2em; 
+}
+
+.divider {
+    border: 1px solid #ccc; 
+    width: 80%; 
+    margin: 20px auto; 
+}
+
+/* Hamburger menu toggles */
+.menu-content.active {
+    max-height: 300px; 
+}
+
+
+
+/* Make the page Responsive */
+
+@media (min-width: 768px) { /*👈This is confusing */
+    .Country-container {
+        flex-direction: row; 
+    }
+
+    .image-container {
+        flex: 0 0 50%; 
+    }
+
+    .text-container {
+        flex: 1; 
+    }
+}
+
+@media (max-width: 768px) {
+    .Large-Picture p {
+        font-size: 2em; 
+    }
+    
+    .places-container h2 {
+        font-size: 3em; 
+    }
+    
+    .text-container h2 {
+        font-size: 2em; 
+    }
+
+    .text-container p {
+        font-size: 1em; 
+    }
+}

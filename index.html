@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Places to Visit</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fa fa-globe" aria-hidden="true"></i> Travel Site
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <div class="menu-content">
+        <h2>About</h2>
+        <p>Welcome to our travel site! We offer the best destinations and packages for your next vacation. Discover new places, explore cultures, and enjoy a memorable trip with us!</p>
+    </div>
+
+
+    <div class="Large-Picture">
+        <p>Where will You Go</p>
+    </div>
+
+    <div class="places-container">
+        <h2>Top 4 Places to Visit</h2>
+        <p>Discover some of the most beautiful places around the world that you must visit at least once in your lifetime.</p>
+        <div class="image-placeholder">
+            <iframe src="https://giphy.com/embed/xiOgHgY2ceKhm46cAj" width="100%" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="divider">
+
+    <!-- Japan 🎌🎌🎌🎌🎌 -->
+    <div class="Country-container">
+        <div class="image-container">
+            <a href="japan.html"> <!--👈Input Page Link here   -->
+            <img src="https://images.unsplash.com/photo-1505440484611-23c171ad6e96?q=80&w=1454&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Japan Image" onmouseover="changeBodyColor('#f76b8a')" onmouseout="resetBodyColor()"/>
+        </a>
+        </div>
+        <div class="text-container">
+            <h2>Japan</h2>
+            <p>Japan is a unique blend of ancient traditions and cutting-edge modernity...</p>
+        </div>
+    </div>
+
+        <!-- Divider -->
+
+    <hr class="divider">
+
+
+    <!-- Italy -->
+    <div class="Country-container Italy">
+        <div class="text-container">
+            <h2>Italy</h2>
+            <p>Italy is a dream destination for travelers, renowned for its rich history...</p>
+        </div>
+        
+        <div class="image-container">
+        <a href="Italy.html"><!--👈Input Page Link here   -->
+            <img onmouseover="changeBodyColor('#42b883')" onmouseout="resetBodyColor()" src="https://images.unsplash.com/photo-1453747063559-36695c8771bd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Italy Image" />
+        </a>
+        </div>
+    </div>
+
+        <!-- Divider -->
+
+    <hr class="divider">
+
+    <!-- Caribbean Islas -->
+    <div class="Country-container Carribean">
+        <div class="image-container">
+            <a href="caribe.html"> <!--👈Input Page Link here   -->
+            <img onmouseover="changeBodyColor('#8dc6ff')" onmouseout="resetBodyColor()" src="https://images.unsplash.com/photo-1642498232612-a837df233825?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Caribbean Image" />
+        </a>
+        </div>
+        <div class="text-container">
+            <h2>The Caribbean Islands</h2>
+            <p>The Caribbean Islands are a tropical paradise that beckon travelers...</p>
+        </div>
+    </div>
+
+        <!-- Divider -->
+
+    <hr class="divider">
+
+
+    <!-- New Zealand -->
+    <div class="Country-container New-Zealand">
+        <div class="text-container">
+            <h2>New Zealand</h2>
+            <p>New Zealand is a breathtaking destination known for its stunning landscapes...</p>
+        </div>
+        <div class="image-container">
+            <a href="new_zealand.html"> <!--👈Input Page Link here   -->
+            <img onmouseover="changeBodyColor('#feffdf')" onmouseout="resetBodyColor()" src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="New Zealand Image" />
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function changeBodyColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function resetBodyColor() {
+            document.body.style.backgroundColor = '#f0f0f0'; 
+        }
+
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-content'); 
+            menu.classList.toggle('active'); 
+        }
+    </script>    
+</body>
+</html>

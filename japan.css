@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box; /* Ensures consistent box sizing across elements */
+}
+
+#back {
+    background-image: url("japan_pic.jpg");
+    background-size: cover; /* Cover ensures the image fills the space proportionally */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh; /* Set the height of the background to 60% of viewport height */
+}
+
+nav {
+    background: rgb(219, 146, 159);
+    height: 10vh; /* Use viewport height for consistent height across screen sizes */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw; /* Responsive padding for navigation */
+}
+
+#nav ul {
+    display: flex; /* Flexbox to align nav items horizontally */
+}
+
+#nav ul li {
+    list-style: none;
+    margin: 0 2vw; /* Responsive horizontal spacing */
+}
+
+#nav ul li a {
+    text-decoration: none;
+    font-size: 2vw; /* Responsive font size */
+    color: black
+}
+
+h1 {
+    font-size: 8vw; /* Use vw for a responsive font size */
+    color: black;
+    text-align: center;
+    margin-top: 20vh; /* Use vh to center the text vertically */
+}
+
+#h2_about{
+    padding: 2vh 10vw; /* Responsive padding */
+    font-size: 4vw; /* Responsive font size */
+    background-color: rgb(219, 146, 159);
+    margin-top: 40vh; /* Responsive margin */
+}
+
+#h2_ToDo, #h2_CandH {
+    padding: 2vh 10vw; /* Responsive padding */
+    font-size: 4vw; /* Responsive font size */
+    background-color: rgb(219, 146, 159);
+    margin-top: 0vh; /* Responsive margin */
+}
+
+p {
+    
+    font-size: 1.5vw; /* Responsive font size */
+    line-height: 1.5;
+    padding: 0 10vw; /* Padding around paragraphs for better readability */
+}
+
+ol{
+    font-size: 1.5vw; /* Responsive font size */
+    line-height: 1.5;
+    padding: 0 10vw; /* Padding around paragraphs for better readability */
+}
+
+#list_img{
+    display: flex;
+    
+}
+
+#todo_img{
+    width: 40vw; /* Responsive width */
+    height: 45vw; /* Maintain aspect ratio */
+    margin: 2vh 0;
+    margin-right: 10vw;
+    border-radius: 5%;
+}
+
+#text_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+#text_img1{
+    display: flex;
+}
+
+#about_img {
+    width: 30vw; /* Responsive width */
+    height: 30vw; /* Maintain aspect ratio */
+    margin: 2vh 0;
+    border-radius: 50%;
+}
+#CandH_imgs{
+    display: flex;
+    margin-top: 2vh;
+}
+
+#CandH_img1{
+    width: 20vw; /* Responsive width */
+    height: 20vw; /* Maintain aspect ratio */
+    margin-right: 10vh;
+    border-radius: 50%;
+}
+#CandH_img2{
+    width: 20vw; /* Responsive width */
+    height: 20vw; /* Maintain aspect ratio */
+    
+    border-radius: 50%;
+}
+#CandH_img3{
+    width: 20vw; /* Responsive width */
+    height: 20vw; /* Maintain aspect ratio */
+    margin-left: 10vh;
+    border-radius: 50%;
+}
+
+#extra_section {
+    background-color: #2f2f2f; /* Grayish black background */
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 24px;
+}
+
+/* Responsive adjustments for smaller screen sizes */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 12vw; /* Increase font size for smaller screens */
+        margin-top: 10vh;
+    }
+
+    #h2_about, #h2_ToDo, #h2_CandH {
+        font-size: 6vw; /* Adjust heading sizes for smaller screens */
+        padding-left: 2vw;
+    }
+
+    #nav ul li a {
+        font-size: 4vw; /* Make the navigation links bigger for small screens */
+    }
+
+    #about_img {
+        width: 80vw; /* Make the image wider on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; /* Stack navigation on small screens */
+        height: auto;
+    }
+
+    #nav ul li {
+        margin: 10px 0; /* Add vertical spacing between nav items */
+    }
+
+    h1 {
+        font-size: 14vw; /* Larger font size for even smaller screens */
+        margin-top: 5vh;
+    }
+
+    p {
+        font-size: 4vw; /* Adjust font size for readability */
+    }
+}
