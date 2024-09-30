@@ -1,23 +1,26 @@
-# Travel Site
+# Travel Website
 
-This is a personal portfolio website to showcase my skills, experiences, and projects. The website features sections such as **About Me**, **Experience**, **Projects**, **Certificates**, and **Contact**.
+## Description
+The Travel Website is an interactive platform that showcases the top destinations around the world. The homepage features a visually appealing design with sections highlighting Japan, Italy, the Caribbean Islands, and New Zealand. Users can explore each destination through dedicated pages that provide in-depth information.
 
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome (for icons)
+- Unsplash (for background images)
+  
 ## Features
 
 - **Responsive Design**: The layout is fully responsive across different screen sizes and devices.
-- **Dynamic Background**: Includes a video background on the homepage for a visually appealing presentation.
+- **Embedded Media**: Integration of animated GIFs and images to enhance visual appeal.
+- **Hover Effects**: Background color changes dynamically when hovering over destination images for an interactive user experience.
 - **Interactive Navigation**: Smooth scrolling and navigation links to different sections.
-- **Project Showcases**: Detailed descriptions of previous projects with links and visual elements.
-- **Certificates**: Direct link to view certificates such as the **Google Cybersecurity Professional Certificate**.
-- **Contact Information**: Email and LinkedIn contact links.
+- **Information Sections**: Brief descriptions of each destination to pique user interest.
+- 
 
-## Technologies Used
-- **HTML5**: For the structure and content of the website.
-- **CSS3**: To style the website and make it visually appealing.
-- **JavaScript**: For enhanced user interactions.
-- **Pexels**: For background video integration.
 
 ## Link
-- https://main--muhammad-khan-personal-website.netlify.app/
+- https://top4-places-to-visit.netlify.app/
 
 ## Demo Video
